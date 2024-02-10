@@ -21,7 +21,7 @@ searchBar.addEventListener("keydown", (event) => {
 
 async function checkWeather(city) {
   var response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
   );
   var data = await response.json();
 
